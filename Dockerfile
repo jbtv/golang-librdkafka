@@ -1,4 +1,4 @@
-FROM golang:1.8.3-alpine
+FROM golang:1.8.3-alpine3.6
 
 RUN apk add --no-cache --virtual .fetch-deps ca-certificates tar
 
