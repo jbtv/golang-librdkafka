@@ -1,0 +1,6 @@
+something like this
+
+VERSION=$(git describe --tags)
+docker build -t golang-librdkafka:$VERSION .
+docker tag golang-librdkafka:$VERSION 259222253036.dkr.ecr.us-east-1.amazonaws.com/golang-librdkafka:$VERSION
+docker push 259222253036.dkr.ecr.us-east-1.amazonaws.com/golang-librdkafka:$VERSION
